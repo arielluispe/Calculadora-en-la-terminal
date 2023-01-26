@@ -10,11 +10,8 @@ namespace Calculadora
             while (true)
             {
                 Console.WriteLine("Elija una opcion:");
-                Console.WriteLine("1 = suma");
-                Console.WriteLine("2 = resta");
-                Console.WriteLine("3 = multiplicacion");
-                Console.WriteLine("4 = divicion");
-                Console.WriteLine("5 = salir");
+                Console.WriteLine("1 = suma"+Environment.NewLine+ "2 = resta" + Environment.NewLine+ "3 = multiplicacion" + Environment.NewLine+ "4 = divicion" + Environment.NewLine+ "5 = salir");
+        
 
                 int opcion;
                 while (!int.TryParse(Console.ReadLine(), out opcion) || opcion < 1 || opcion > 5)
